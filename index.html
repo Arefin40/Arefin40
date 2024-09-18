@@ -24,6 +24,40 @@
       </script>
    </head>
    <body class="flex items-center justify-center min-h-screen">
-      <h1 class="text-gray-900 text-5xl font-semibold">Hello World</h1>
+      <!-- ANCHOR Header -->
+      <header class="h-20 lg:h-auto lg:py-8 flex items-center">
+         <div
+            class="container flex justify-center lg:grid lg:grid-cols-[8.5rem_1fr_8.5rem] gap-x-6"
+         >
+            <a href="/">
+               <h1 class="font-extrabold text-2xl sm:text-3xl text-zinc-900">
+                  Shahriar<span class="text-sky-500">.</span>
+               </h1>
+            </a>
+
+            <nav class="hidden lg:flex items-center justify-center">
+               <ul class="p-8 lg:p-0 grid lg:flex gap-x-5 gap-y-8 content-start">
+                  <li class="text-sky-600">
+                     <a class="p-3" href="/"> Home </a>
+                  </li>
+                  <li>
+                     <a class="p-3" href="/#portfolio"> Portfolio </a>
+                  </li>
+                  <li>
+                     <a class="p-3" href="/#about"> About </a>
+                  </li>
+                  <li>
+                     <a class="p-3" href="/#contact"> Contact </a>
+                  </li>
+               </ul>
+            </nav>
+
+            <button
+               class="hidden lg:block px-4 py-2 rounded-full active:scale-90 transition-all shrink-0 border justify-self-end bg-sky-500 text-white shadow-lg shadow-sky-200"
+            >
+               Let's talk
+            </button>
+         </div>
+      </header>
    </body>
 </html>
