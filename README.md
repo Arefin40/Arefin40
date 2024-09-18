@@ -1,5 +1,5 @@
 <img 
-   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/images/cover.svg"
+   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/assets/images/cover.svg"
    alt="Cover photo"
 />
 
@@ -23,10 +23,10 @@
 <p align="center" style="display: flex; margin: 0;">
 <img
    width="400"
-   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/images/Techstack-1.svg"
+   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/assets/images/Techstack-1.svg"
 />
 <img
    width="400"
-   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/images/Techstack-2.svg"
+   src="https://raw.githubusercontent.com/Arefin40/Arefin40/main/assets/images/Techstack-2.svg"
 />
 </p>
