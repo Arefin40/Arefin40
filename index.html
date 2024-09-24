@@ -10,6 +10,28 @@
          rel="stylesheet"
          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..800&display=swap"
       />
+      <style>
+         html.lenis,
+         html.lenis body {
+            height: auto;
+         }
+
+         .lenis.lenis-smooth {
+            scroll-behavior: auto !important;
+         }
+
+         .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+         }
+
+         .lenis.lenis-stopped {
+            overflow: hidden;
+         }
+
+         .lenis.lenis-smooth iframe {
+            pointer-events: none;
+         }
+      </style>
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
          tailwind.config = {
@@ -22,6 +44,7 @@
          };
       </script>
    </head>
+
    <body class="relative text-zinc-600">
       <!-- ANCHOR Header -->
       <header class="h-20 lg:h-auto lg:py-8 flex items-center">
@@ -36,18 +59,11 @@
 
             <nav class="hidden lg:flex items-center justify-center">
                <ul class="p-8 lg:p-0 grid lg:flex gap-x-5 gap-y-8 content-start">
-                  <li class="text-sky-600">
-                     <a class="p-3" href="/Arefin40/">Home</a>
-                  </li>
-                  <li>
-                     <a class="p-3" href="/Arefin40/#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                     <a class="p-3" href="/Arefin40/#about">About</a>
-                  </li>
-                  <li>
-                     <a class="p-3" href="/Arefin40/#contact">Contact</a>
-                  </li>
+                  <li data-link="home" class="nav-link p-3 cursor-pointer text-sky-600">Home</li>
+                  <li data-link="portfolio" class="nav-link p-3 cursor-pointer">Portfolio</li>
+                  <li data-link="about" class="nav-link p-3 cursor-pointer">About</li>
+                  <li data-link="skills" class="nav-link p-3 cursor-pointer">Skills</li>
+                  <li data-link="contact" class="nav-link p-3 cursor-pointer">Contact</li>
                </ul>
             </nav>
 
@@ -62,7 +78,8 @@
       <main>
          <!-- ANCHOR Hero Section -->
          <section
-            class="container lg:min-h-[calc(100vh-6.625rem)] py-24 text-center space-y-3 sm:space-y-6 text-zinc-600"
+            id="home"
+            class="section container lg:min-h-[calc(100vh-6.625rem)] py-24 text-center space-y-3 sm:space-y-6 text-zinc-600"
          >
             <h2 class="text-2xl md:text-4xl font-bold text-zinc-800">Hello! I&apos;m Shahriar</h2>
             <h6 class="text-lg">Frontend Web Developer</h6>
@@ -80,7 +97,7 @@
          </section>
 
          <!-- ANCHOR Portfolio -->
-         <section id="portfolio" class="pb-16 space-y-16 bg-zinc-900">
+         <section id="portfolio" class="section pb-16 space-y-16 bg-zinc-900">
             <h2
                class="container font-extrabold text-center text-3xl md:text-5xl pt-16 xl:sticky xl:top-0 text-white"
             >
@@ -242,7 +259,7 @@
                         <div class="relative space-y-4 order-2 xl:order-1">
                            <h2 class="text-xl lg:text-3xl font-bold text-white">Cynosure</h2>
                            <p class="leading-relaxed">
-                              Cynosure is a hotel's website, featuring room lisitings, booking
+                              Cynosure is a hotel's website, featuring room listings, booking
                               system, and review system.
                            </p>
                            <div class="space-y-4 leading-relaxed">
@@ -406,7 +423,7 @@
                                  </h4>
                                  <p>
                                     Secure login, registration, private routes for managing art
-                                    collections; fully responsive layout with zinc/light mode.
+                                    collections; fully responsive layout with dark / light mode.
                                  </p>
                               </div>
                            </div>
@@ -502,7 +519,7 @@
          </section>
 
          <!-- ANCHOR About me -->
-         <section id="about" class="py-16 space-y-16 bg-zinc-900 text-zinc-400">
+         <section id="about" class="section py-16 space-y-16 bg-zinc-900 text-zinc-400">
             <h2 class="container font-extrabold text-center text-3xl md:text-5xl text-white">
                About me
             </h2>
@@ -651,7 +668,7 @@
          </section>
 
          <!-- ANCHOR Skills -->
-         <div id="skills" class="py-16 space-y-16 bg-zinc-900">
+         <section id="skills" class="section py-16 space-y-16 bg-zinc-900">
             <h2 class="container font-extrabold text-center text-3xl md:text-5xl text-white">
                My Skillset
             </h2>
@@ -681,7 +698,7 @@
                         <img src="assets/icons/Django.svg" alt="Django" class="size-9" />
                         <img src="assets/icons/Pandas.svg" alt="Pandas" class="size-9" />
                         <img src="assets/icons/ScikitLearn.svg" alt="ScikitLearn" class="size-9" />
-                        <img src="assets/icons/Tersorflow.svg" alt="Tersorflow" class="size-9" />
+                        <img src="assets/icons/Tersorflow.svg" alt="Tensorflow" class="size-9" />
                         <img src="assets/icons/Pytorch.svg" alt="Pytorch" class="size-9" />
                      </div>
                      <span class="font-semibold text-zinc-200">Machine Learning</span>
@@ -695,7 +712,7 @@
                <div class="max-w-80">
                   <dt>
                      <div class="h-10 mb-4 flex justify-center items-center gap-x-5">
-                        <img src="assets/icons/JavsScript.svg" alt="JavsScript" class="size-9" />
+                        <img src="assets/icons/JavsScript.svg" alt="JavaScript" class="size-9" />
                         <img src="assets/icons/TypeScript.svg" alt="TypeScript" class="size-9" />
                         <img src="assets/icons/Python.svg" alt="Python" class="size-9" />
                         <img src="assets/icons/Java.svg" alt="Java" class="size-9" />
@@ -709,231 +726,231 @@
                   </dd>
                </div>
             </dl>
-         </div>
-      </main>
+         </section>
 
-      <!-- ANCHOR Contact -->
-      <section id="contact" class="relative py-16 bg-zinc-900 text-zinc-400 overflow-hidden">
-         <main
-            class="container relative p-10 grid md:grid-cols-2 gap-x-16 gap-y-8 rounded-xl bg-white backdrop-blur-lg bg-opacity-5"
-         >
-            <div class="space-y-10">
-               <div>
-                  <h2 class="font-extrabold text-3xl md:text-5xl text-white">Contact Us</h2>
+         <!-- ANCHOR Contact -->
+         <section id="contact" class="section relative py-16 bg-zinc-900 text-zinc-400">
+            <main
+               class="container relative p-10 grid md:grid-cols-2 gap-x-16 gap-y-8 rounded-xl bg-white backdrop-blur-lg bg-opacity-5"
+            >
+               <div class="space-y-10">
+                  <div>
+                     <h2 class="font-extrabold text-3xl md:text-5xl text-white">Contact Us</h2>
+                  </div>
+
+                  <ul class="space-y-8">
+                     <li class="flex items-start gap-x-3">
+                        <div
+                           class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
+                        >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="w-6 h-6 fill-current flex-shrink-0"
+                           >
+                              <path
+                                 d="M12 0a9.333 9.333 0 0 0-9.333 9.333C2.667 16.89 12 24 12 24s9.333-7.11 9.333-14.667A9.333 9.333 0 0 0 12 0zm0 13.778a4.444 4.444 0 1 1 4.444-4.444A4.444 4.444 0 0 1 12 13.778z"
+                              ></path>
+                           </svg>
+                        </div>
+
+                        <div class="space-y-1">
+                           <p class="text-zinc-500">Address</p>
+                           <p>Dhaka, Bangladesh</p>
+                        </div>
+                     </li>
+
+                     <li class="flex items-start gap-x-3">
+                        <div
+                           class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
+                        >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 18"
+                              class="size-6 fill-current flex-shrink-0"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M23.024.596a1.714 1.714 0 0 0-.739-.168H1.715c-.26 0-.511.059-.74.168l9.813 9.812a1.713 1.713 0 0 0 2.424 0zm-7.596 9.212-1.408 1.409a2.858 2.858 0 0 1-4.041 0L8.57 9.807.975 17.405a1.714 1.714 0 0 0 .739.167h20.57c.26 0 .511-.058.74-.167zm8.404-8.404c.109.228.167.48.167.739v13.714c0 .258-.058.51-.167.738L16.236 9zm-23.665 0L7.763 9 .167 16.596a1.714 1.714 0 0 1-.168-.739V2.143c0-.258.059-.51.168-.739z"
+                              ></path>
+                           </svg>
+                        </div>
+
+                        <div class="space-y-1">
+                           <p class="text-zinc-500">Email</p>
+                           <a href="mailto:arfin17310@gmail.com">arfin17310@gmail.com</a>
+                        </div>
+                     </li>
+
+                     <li class="flex items-start gap-x-3">
+                        <div
+                           class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
+                        >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              class="size-6 fill-current flex-shrink-0"
+                           >
+                              <path
+                                 d="M23.87 18.91c-1.11-2.322-3.004-3.837-5.73-4.519-.404-.1-.833 0-1.161.278l-2.247 1.843c-.43.353-1.06.404-1.54.1a17.574 17.574 0 0 1-5.78-5.78 1.328 1.328 0 0 1 .1-1.54l1.843-2.246c.278-.329.379-.758.278-1.161C8.926 3.133 7.412 1.24 5.089.129a1.31 1.31 0 0 0-1.186.025 28.923 28.923 0 0 0-3.358 2.12 1.381 1.381 0 0 0-.53 1.313c.758 4.519 3.206 9.264 7.17 13.227s8.708 6.387 13.226 7.17a1.382 1.382 0 0 0 1.313-.53 26.927 26.927 0 0 0 2.12-3.358 1.31 1.31 0 0 0 .026-1.186z"
+                              ></path>
+                           </svg>
+                        </div>
+
+                        <div class="space-y-1">
+                           <p class="text-zinc-500">Mobile</p>
+                           <p>+880 1863-599302</p>
+                        </div>
+                     </li>
+
+                     <li class="flex items-center gap-x-4 text-zinc-600">
+                        <a
+                           target="_blank"
+                           class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
+                           href="https://www.facebook.com/Arefin40"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-[#1976d2] flex-shrink-0 fill-current"
+                           >
+                              <path
+                                 d="M24 12c0 5.99-4.388 10.954-10.125 11.854V15.47h2.796L17.203 12h-3.328V9.75c0-.95.465-1.875 1.956-1.875h1.513V4.922s-1.374-.234-2.687-.234c-2.74 0-4.532 1.66-4.532 4.668V12H7.078v3.469h3.047v8.385C4.388 22.954 0 17.99 0 12 0 5.373 5.373 0 12 0s12 5.373 12 12z"
+                              ></path>
+                              <path
+                                 class="group-hover:text-white text-[#2f2f32]"
+                                 d="M16.671 15.469 17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.741 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.09 12.09 0 0 0 3.75 0V15.47z"
+                              ></path>
+                           </svg>
+                        </a>
+
+                        <a
+                           target="_blank"
+                           class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
+                           href="https://twitter.com/arefin40"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-white flex-shrink-0 fill-current scale-[0.8]"
+                           >
+                              <path
+                                 d="M14.234 10.162 22.976 0h-2.071l-7.591 8.824L7.25 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993l-9.509-13.838zm-2.838 3.298-.929-1.328L3.077 1.56h3.181l5.965 8.532.93 1.329 7.753 11.09h-3.182l-6.328-9.05z"
+                              ></path>
+                           </svg>
+                        </a>
+
+                        <a
+                           target="_blank"
+                           class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
+                           href="https://www.linkedin.com/in/arefin40/"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-[#0077b5] flex-shrink-0 fill-current"
+                           >
+                              <path
+                                 d="M3.273 0h17.454A3.273 3.273 0 0 1 24 3.273v17.454A3.273 3.273 0 0 1 20.727 24H3.273A3.273 3.273 0 0 1 0 20.727V3.273A3.273 3.273 0 0 1 3.273 0Zm0 0"
+                              ></path>
+
+                              <path
+                                 class="group-hover:text-white text-[#2f2f32]"
+                                 d="M8.645 6.547A2.042 2.042 0 0 1 6.602 8.59a2.044 2.044 0 1 1 2.043-2.043Zm-.461 3.406v9.04a.508.508 0 0 1-.508.508l-2.156-.001a.508.508 0 0 1-.508-.508V9.953c0-.277.226-.504.508-.504h2.156c.281 0 .508.227.508.504Zm11.265 4.707v4.375a.464.464 0 0 1-.465.465h-2.316a.457.457 0 0 1-.332-.137.471.471 0 0 1-.137-.328v-4.242c0-.633.188-2.77-1.652-2.77-1.426 0-1.715 1.465-1.774 2.122v4.89c0 .254-.203.461-.46.465h-2.239a.464.464 0 0 1-.465-.465v-9.12c0-.122.047-.243.137-.33a.448.448 0 0 1 .328-.136h2.239c.257 0 .468.207.468.465v.79c.528-.794 1.313-1.407 2.985-1.407 3.707 0 3.683 3.46 3.683 5.363Zm0 0"
+                              ></path>
+                           </svg>
+                        </a>
+
+                        <a
+                           target="_blank"
+                           class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
+                           href="https://github.com/Arefin40"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-white flex-shrink-0 fill-current"
+                           >
+                              <path
+                                 d="M11.999.25C5.373.25 0 5.644 0 12.298c0 5.322 3.438 9.837 8.208 11.431.6.111.819-.261.819-.58 0-.287-.01-1.044-.017-2.05-3.337.728-4.042-1.615-4.042-1.615-.545-1.392-1.332-1.762-1.332-1.762-1.09-.747.08-.732.08-.732 1.205.085 1.838 1.242 1.838 1.242 1.071 1.84 2.81 1.309 3.494 1 .108-.778.418-1.31.762-1.611-2.664-.304-5.466-1.338-5.466-5.954 0-1.315.468-2.39 1.236-3.234-.125-.304-.536-1.53.117-3.187 0 0 1.008-.324 3.3 1.234.957-.267 1.983-.4 3.004-.405 1.019.006 2.046.138 3.005.407 2.29-1.559 3.297-1.235 3.297-1.235.654 1.66.243 2.883.12 3.188.77.843 1.233 1.918 1.233 3.234 0 4.627-2.805 5.646-5.478 5.945.43.372.814 1.107.814 2.23 0 1.611-.015 2.91-.015 3.305 0 .322.216.697.825.579A12.048 12.048 0 0 0 24 12.298C24 5.644 18.627.25 11.999.25z"
+                              ></path>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
                </div>
 
-               <ul class="space-y-8">
-                  <li class="flex items-start gap-x-3">
-                     <div
-                        class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
+               <div>
+                  <form class="space-y-6">
+                     <div>
+                        <label
+                           for="name"
+                           class="inline-block mb-2 text-sm font-semibold text-zinc-200"
+                        >
+                           Name
+                        </label>
+                        <div class="relative w-full">
+                           <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              autocomplete="name"
+                              placeholder="Enter fullname"
+                              class="block w-full py-3 focus:border-sky-500 border-zinc-700 bg-transparent text-zinc-200 placeholder-zinc-500 border-b outline-none"
+                           />
+                        </div>
+                     </div>
+
+                     <div>
+                        <label
+                           for="email"
+                           class="inline-block mb-2 text-sm font-semibold text-zinc-200"
+                        >
+                           Email
+                        </label>
+                        <div class="relative w-full">
+                           <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              autocomplete="email"
+                              placeholder="Enter email"
+                              class="block w-full py-3 focus:border-sky-500 border-zinc-700 bg-transparent text-zinc-200 placeholder-zinc-500 border-b outline-none"
+                           />
+                        </div>
+                     </div>
+
+                     <div>
+                        <label for="message" class="block mb-2 text-sm font-semibold text-zinc-200">
+                           Message
+                        </label>
+                        <textarea
+                           id="message"
+                           name="message"
+                           rows="3"
+                           placeholder="Write message"
+                           class="block py-3 w-full bg-transparent text-zinc-200 placeholder-zinc-500 border-b border-zinc-700 outline-none focus:border-sky-500"
+                        ></textarea>
+                     </div>
+
+                     <button
+                        type="submit"
+                        class="px-8 py-4 mx-auto bg-sky-500 text-white flex items-center justify-center gap-x-2 rounded-full shadow-lg shadow-sky-950 transition-all active:scale-90"
+                        control-id="ControlID-4"
                      >
+                        <span>Send Message</span>
                         <svg
                            xmlns="http://www.w3.org/2000/svg"
                            viewBox="0 0 24 24"
-                           class="w-6 h-6 fill-current flex-shrink-0"
+                           class="w-4 h-4 fill-current flex-shrink-0"
                         >
                            <path
-                              d="M12 0a9.333 9.333 0 0 0-9.333 9.333C2.667 16.89 12 24 12 24s9.333-7.11 9.333-14.667A9.333 9.333 0 0 0 12 0zm0 13.778a4.444 4.444 0 1 1 4.444-4.444A4.444 4.444 0 0 1 12 13.778z"
+                              d="M8.75 17.612v4.638a.751.751 0 0 0 1.354.444l2.713-3.692zM23.685.139a.75.75 0 0 0-.782-.054l-22.5 11.75a.752.752 0 0 0 .104 1.375l6.255 2.138 13.321-11.39L9.775 16.377l10.483 3.583a.753.753 0 0 0 .984-.599l2.75-18.5a.751.751 0 0 0-.307-.722z"
                            ></path>
                         </svg>
-                     </div>
-
-                     <div class="space-y-1">
-                        <p class="text-zinc-500">Address</p>
-                        <p>Dhaka, Bangladesh</p>
-                     </div>
-                  </li>
-
-                  <li class="flex items-start gap-x-3">
-                     <div
-                        class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 24 18"
-                           class="size-6 fill-current flex-shrink-0"
-                        >
-                           <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M23.024.596a1.714 1.714 0 0 0-.739-.168H1.715c-.26 0-.511.059-.74.168l9.813 9.812a1.713 1.713 0 0 0 2.424 0zm-7.596 9.212-1.408 1.409a2.858 2.858 0 0 1-4.041 0L8.57 9.807.975 17.405a1.714 1.714 0 0 0 .739.167h20.57c.26 0 .511-.058.74-.167zm8.404-8.404c.109.228.167.48.167.739v13.714c0 .258-.058.51-.167.738L16.236 9zm-23.665 0L7.763 9 .167 16.596a1.714 1.714 0 0 1-.168-.739V2.143c0-.258.059-.51.168-.739z"
-                           ></path>
-                        </svg>
-                     </div>
-
-                     <div class="space-y-1">
-                        <p class="text-zinc-500">Email</p>
-                        <a href="mailto:arfin17310@gmail.com">arfin17310@gmail.com</a>
-                     </div>
-                  </li>
-
-                  <li class="flex items-start gap-x-3">
-                     <div
-                        class="w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 bg-white bg-opacity-5 backdrop-blur"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 24 24"
-                           class="size-6 fill-current flex-shrink-0"
-                        >
-                           <path
-                              d="M23.87 18.91c-1.11-2.322-3.004-3.837-5.73-4.519-.404-.1-.833 0-1.161.278l-2.247 1.843c-.43.353-1.06.404-1.54.1a17.574 17.574 0 0 1-5.78-5.78 1.328 1.328 0 0 1 .1-1.54l1.843-2.246c.278-.329.379-.758.278-1.161C8.926 3.133 7.412 1.24 5.089.129a1.31 1.31 0 0 0-1.186.025 28.923 28.923 0 0 0-3.358 2.12 1.381 1.381 0 0 0-.53 1.313c.758 4.519 3.206 9.264 7.17 13.227s8.708 6.387 13.226 7.17a1.382 1.382 0 0 0 1.313-.53 26.927 26.927 0 0 0 2.12-3.358 1.31 1.31 0 0 0 .026-1.186z"
-                           ></path>
-                        </svg>
-                     </div>
-
-                     <div class="space-y-1">
-                        <p class="text-zinc-500">Mobile</p>
-                        <p>+880 1863-599302</p>
-                     </div>
-                  </li>
-
-                  <li class="flex items-center gap-x-4 text-zinc-600">
-                     <a
-                        target="_blank"
-                        class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
-                        href="https://www.facebook.com/Arefin40"
-                     >
-                        <svg
-                           viewBox="0 0 24 24"
-                           class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-[#1976d2] flex-shrink-0 fill-current"
-                        >
-                           <path
-                              d="M24 12c0 5.99-4.388 10.954-10.125 11.854V15.47h2.796L17.203 12h-3.328V9.75c0-.95.465-1.875 1.956-1.875h1.513V4.922s-1.374-.234-2.687-.234c-2.74 0-4.532 1.66-4.532 4.668V12H7.078v3.469h3.047v8.385C4.388 22.954 0 17.99 0 12 0 5.373 5.373 0 12 0s12 5.373 12 12z"
-                           ></path>
-                           <path
-                              class="group-hover:text-white text-[#2f2f32]"
-                              d="M16.671 15.469 17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.741 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.09 12.09 0 0 0 3.75 0V15.47z"
-                           ></path>
-                        </svg>
-                     </a>
-
-                     <a
-                        target="_blank"
-                        class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
-                        href="https://twitter.com/arefin40"
-                     >
-                        <svg
-                           viewBox="0 0 24 24"
-                           class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-white flex-shrink-0 fill-current scale-[0.8]"
-                        >
-                           <path
-                              d="M14.234 10.162 22.976 0h-2.071l-7.591 8.824L7.25 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993l-9.509-13.838zm-2.838 3.298-.929-1.328L3.077 1.56h3.181l5.965 8.532.93 1.329 7.753 11.09h-3.182l-6.328-9.05z"
-                           ></path>
-                        </svg>
-                     </a>
-
-                     <a
-                        target="_blank"
-                        class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
-                        href="https://www.linkedin.com/in/arefin40/"
-                     >
-                        <svg
-                           viewBox="0 0 24 24"
-                           class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-[#0077b5] flex-shrink-0 fill-current"
-                        >
-                           <path
-                              d="M3.273 0h17.454A3.273 3.273 0 0 1 24 3.273v17.454A3.273 3.273 0 0 1 20.727 24H3.273A3.273 3.273 0 0 1 0 20.727V3.273A3.273 3.273 0 0 1 3.273 0Zm0 0"
-                           ></path>
-
-                           <path
-                              class="group-hover:text-white text-[#2f2f32]"
-                              d="M8.645 6.547A2.042 2.042 0 0 1 6.602 8.59a2.044 2.044 0 1 1 2.043-2.043Zm-.461 3.406v9.04a.508.508 0 0 1-.508.508l-2.156-.001a.508.508 0 0 1-.508-.508V9.953c0-.277.226-.504.508-.504h2.156c.281 0 .508.227.508.504Zm11.265 4.707v4.375a.464.464 0 0 1-.465.465h-2.316a.457.457 0 0 1-.332-.137.471.471 0 0 1-.137-.328v-4.242c0-.633.188-2.77-1.652-2.77-1.426 0-1.715 1.465-1.774 2.122v4.89c0 .254-.203.461-.46.465h-2.239a.464.464 0 0 1-.465-.465v-9.12c0-.122.047-.243.137-.33a.448.448 0 0 1 .328-.136h2.239c.257 0 .468.207.468.465v.79c.528-.794 1.313-1.407 2.985-1.407 3.707 0 3.683 3.46 3.683 5.363Zm0 0"
-                           ></path>
-                        </svg>
-                     </a>
-
-                     <a
-                        target="_blank"
-                        class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-5 backdrop-blur group"
-                        href="https://github.com/Arefin40"
-                     >
-                        <svg
-                           viewBox="0 0 24 24"
-                           class="w-5 h-5 sm:w-7 sm:h-7 text-zinc-500 group-hover:text-white flex-shrink-0 fill-current"
-                        >
-                           <path
-                              d="M11.999.25C5.373.25 0 5.644 0 12.298c0 5.322 3.438 9.837 8.208 11.431.6.111.819-.261.819-.58 0-.287-.01-1.044-.017-2.05-3.337.728-4.042-1.615-4.042-1.615-.545-1.392-1.332-1.762-1.332-1.762-1.09-.747.08-.732.08-.732 1.205.085 1.838 1.242 1.838 1.242 1.071 1.84 2.81 1.309 3.494 1 .108-.778.418-1.31.762-1.611-2.664-.304-5.466-1.338-5.466-5.954 0-1.315.468-2.39 1.236-3.234-.125-.304-.536-1.53.117-3.187 0 0 1.008-.324 3.3 1.234.957-.267 1.983-.4 3.004-.405 1.019.006 2.046.138 3.005.407 2.29-1.559 3.297-1.235 3.297-1.235.654 1.66.243 2.883.12 3.188.77.843 1.233 1.918 1.233 3.234 0 4.627-2.805 5.646-5.478 5.945.43.372.814 1.107.814 2.23 0 1.611-.015 2.91-.015 3.305 0 .322.216.697.825.579A12.048 12.048 0 0 0 24 12.298C24 5.644 18.627.25 11.999.25z"
-                           ></path>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-
-            <div>
-               <form class="space-y-6">
-                  <div>
-                     <label
-                        for="name"
-                        class="inline-block mb-2 text-sm font-semibold text-zinc-200"
-                     >
-                        Name
-                     </label>
-                     <div class="relative w-full">
-                        <input
-                           type="text"
-                           id="name"
-                           name="name"
-                           autocomplete="name"
-                           placeholder="Enter fullname"
-                           class="block w-full py-3 focus:border-sky-500 border-zinc-700 bg-transparent text-zinc-200 placeholder-zinc-500 border-b outline-none"
-                        />
-                     </div>
-                  </div>
-
-                  <div>
-                     <label
-                        for="email"
-                        class="inline-block mb-2 text-sm font-semibold text-zinc-200"
-                     >
-                        Email
-                     </label>
-                     <div class="relative w-full">
-                        <input
-                           type="email"
-                           id="email"
-                           name="email"
-                           autocomplete="email"
-                           placeholder="Enter email"
-                           class="block w-full py-3 focus:border-sky-500 border-zinc-700 bg-transparent text-zinc-200 placeholder-zinc-500 border-b outline-none"
-                        />
-                     </div>
-                  </div>
-
-                  <div>
-                     <label for="message" class="block mb-2 text-sm font-semibold text-zinc-200">
-                        Message
-                     </label>
-                     <textarea
-                        id="message"
-                        name="message"
-                        rows="3"
-                        placeholder="Write message"
-                        class="block py-3 w-full bg-transparent text-zinc-200 placeholder-zinc-500 border-b border-zinc-700 outline-none focus:border-sky-500"
-                     ></textarea>
-                  </div>
-
-                  <button
-                     type="submit"
-                     class="px-8 py-4 mx-auto bg-sky-500 text-white flex items-center justify-center gap-x-2 rounded-full shadow-lg shadow-sky-950 transition-all active:scale-90"
-                     control-id="ControlID-4"
-                  >
-                     <span>Send Message</span>
-                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        class="w-4 h-4 fill-current flex-shrink-0"
-                     >
-                        <path
-                           d="M8.75 17.612v4.638a.751.751 0 0 0 1.354.444l2.713-3.692zM23.685.139a.75.75 0 0 0-.782-.054l-22.5 11.75a.752.752 0 0 0 .104 1.375l6.255 2.138 13.321-11.39L9.775 16.377l10.483 3.583a.753.753 0 0 0 .984-.599l2.75-18.5a.751.751 0 0 0-.307-.722z"
-                        ></path>
-                     </svg>
-                  </button>
-               </form>
-            </div>
-         </main>
-      </section>
+                     </button>
+                  </form>
+               </div>
+            </main>
+         </section>
+      </main>
 
       <!-- ANCHOR Footer Section -->
       <footer class="mt-12 isolate">
@@ -1047,5 +1064,9 @@
             </div>
          </section>
       </footer>
+
+      <!-- ANCHOR JavaScript Interactivity -->
+      <script src="assets/lib/lenis.min.js"></script>
+      <script src="index.js"></script>
    </body>
 </html>
