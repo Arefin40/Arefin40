@@ -20,117 +20,117 @@ I'm an AI Engineer with experience in **building AI-powered SaaS products** and 
    <b>Frontend & Backend</b>
    <br><br>
    <picture>
-      <img alt="javascript" width="48" height="48" src="assets/icons/javascript.svg">
+      <img alt="javascript" title="JavaScript" width="48" height="48" src="assets/icons/javascript.svg">
    </picture>
    <picture>
-      <img alt="typescript" width="48" height="48" src="assets/icons/typescript.svg">
+      <img alt="typescript" title="TypeScript" width="48" height="48" src="assets/icons/typescript.svg">
    </picture>
    <picture>
-      <img alt="go" width="48" height="48" src="assets/icons/go.svg">
+      <img alt="go" title="Go" width="48" height="48" src="assets/icons/go.svg">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/reactjs-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/reactjs-dark.svg?v=1">
-      <img alt="reactjs" width="48" height="48" src="assets/icons/reactjs-dark.svg?v=1">
+      <img alt="reactjs" title="React" width="48" height="48" src="assets/icons/reactjs-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/nextjs-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/nextjs-dark.svg?v=1">
-      <img alt="nextjs" width="48" height="48" src="assets/icons/nextjs-dark.svg?v=1">
+      <img alt="nextjs" title="Next.js" width="48" height="48" src="assets/icons/nextjs-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/svelte-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/svelte-dark.svg?v=1">
-      <img alt="svelte" width="48" height="48" src="assets/icons/svelte-dark.svg?v=1">
+      <img alt="svelte" title="Svelte" width="48" height="48" src="assets/icons/svelte-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/astro-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/astro-dark.svg?v=1">
-      <img alt="astro" width="48" height="48" src="assets/icons/astro-dark.svg?v=1">
+      <img alt="astro" title="Astro" width="48" height="48" src="assets/icons/astro-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/flask-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/flask-dark.svg?v=1">
-      <img alt="flask" width="48" height="48" src="assets/icons/flask-dark.svg?v=1">
+      <img alt="flask" title="Flask" width="48" height="48" src="assets/icons/flask-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/django-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/django-dark.svg?v=1">
-      <img alt="django" width="48" height="48" src="assets/icons/django-dark.svg?v=1">
+      <img alt="django" title="Django" width="48" height="48" src="assets/icons/django-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/streamlit-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/streamlit-dark.svg?v=1">
-      <img alt="streamlit" width="48" height="48" src="assets/icons/streamlit-dark.svg?v=1">
+      <img alt="streamlit" title="Streamlit" width="48" height="48" src="assets/icons/streamlit-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/tailwindcss-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/tailwindcss-dark.svg?v=1">
-      <img alt="tailwindcss" width="48" height="48" src="assets/icons/tailwindcss-dark.svg?v=1">
+      <img alt="tailwindcss" title="Tailwind CSS" width="48" height="48" src="assets/icons/tailwindcss-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/zustand-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/zustand-dark.svg?v=1">
-      <img alt="zustand" width="48" height="48" src="assets/icons/zustand-dark.svg?v=1">
+      <img alt="zustand" title="Zustand" width="48" height="48" src="assets/icons/zustand-dark.svg?v=1">
    </picture>
    <br>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/nodejs-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/nodejs-dark.svg?v=1">
-      <img alt="nodejs" width="48" height="48" src="assets/icons/nodejs-dark.svg?v=1">
+      <img alt="nodejs" title="Node.js" width="48" height="48" src="assets/icons/nodejs-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/expressjs-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/expressjs-dark.svg?v=1">
-      <img alt="express" width="48" height="48" src="assets/icons/expressjs-dark.svg?v=1">
+      <img alt="express" title="Express.js" width="48" height="48" src="assets/icons/expressjs-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/graphql-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/graphql-dark.svg?v=1">
-      <img alt="graphql" width="48" height="48" src="assets/icons/graphql-dark.svg?v=1">
+      <img alt="graphql" title="GraphQL" width="48" height="48" src="assets/icons/graphql-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/tauri-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/tauri-dark.svg?v=1">
-      <img alt="tauri" width="48" height="48" src="assets/icons/tauri-dark.svg?v=1">
+      <img alt="tauri" title="Tauri" width="48" height="48" src="assets/icons/tauri-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/mysql-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/mysql-dark.svg?v=1">
-      <img alt="mysql" width="48" height="48" src="assets/icons/mysql-dark.svg?v=1">
+      <img alt="mysql" title="MySQL" width="48" height="48" src="assets/icons/mysql-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/mongodb-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/mongodb-dark.svg?v=1">
-      <img alt="mongodb" width="48" height="48" src="assets/icons/mongodb-dark.svg?v=1">
+      <img alt="mongodb" title="MongoDB" width="48" height="48" src="assets/icons/mongodb-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/postgres-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/postgres-dark.svg?v=1">
-      <img alt="postgres" width="48" height="48" src="assets/icons/postgres-dark.svg?v=1">
+      <img alt="postgres" title="PostgreSQL" width="48" height="48" src="assets/icons/postgres-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/supabase-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/supabase-dark.svg?v=1">
-      <img alt="supabase" width="48" height="48" src="assets/icons/supabase-dark.svg?v=1">
+      <img alt="supabase" title="Supabase" width="48" height="48" src="assets/icons/supabase-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/convex-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/convex-dark.svg?v=1">
-      <img alt="convex" width="48" height="48" src="assets/icons/convex-dark.svg?v=1">
+      <img alt="convex" title="Convex" width="48" height="48" src="assets/icons/convex-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/redis-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/redis-dark.svg?v=1">
-      <img alt="redis" width="48" height="48" src="assets/icons/redis-dark.svg?v=1">
+      <img alt="redis" title="Redis" width="48" height="48" src="assets/icons/redis-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/fastapi-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/fastapi-dark.svg?v=1">
-      <img alt="fastapi" width="48" height="48" src="assets/icons/fastapi-dark.svg?v=1">
+      <img alt="fastapi" title="FastAPI" width="48" height="48" src="assets/icons/fastapi-dark.svg?v=1">
    </picture>
    <picture>
-      <img alt="celery" width="48" height="48" src="assets/icons/celery.svg?v=1">
+      <img alt="celery" title="Celery" width="48" height="48" src="assets/icons/celery.svg?v=1">
    </picture>
 </div>
 
@@ -142,73 +142,73 @@ I'm an AI Engineer with experience in **building AI-powered SaaS products** and 
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/python-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/python-dark.svg?v=1">
-      <img alt="python" width="48" height="48" src="assets/icons/python-dark.svg?v=1">
+      <img alt="python" title="Python" width="48" height="48" src="assets/icons/python-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/sklearn-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/sklearn-dark.svg?v=1">
-      <img alt="scikit-learn" width="48" height="48" src="assets/icons/sklearn-dark.svg?v=1">
+      <img alt="scikit-learn" title="scikit-learn" width="48" height="48" src="assets/icons/sklearn-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/pytorch-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/pytorch-dark.svg?v=1">
-      <img alt="pytorch" width="48" height="48" src="assets/icons/pytorch-dark.svg?v=1">
+      <img alt="pytorch" title="PyTorch" width="48" height="48" src="assets/icons/pytorch-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/opencv-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/opencv-dark.svg?v=1">
-      <img alt="opencv" width="48" height="48" src="assets/icons/opencv-dark.svg?v=1">
+      <img alt="opencv" title="OpenCV" width="48" height="48" src="assets/icons/opencv-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/gradio-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/gradio-dark.svg?v=1">
-      <img alt="gradio" width="48" height="48" src="assets/icons/gradio-dark.svg?v=1">
+      <img alt="gradio" title="Gradio" width="48" height="48" src="assets/icons/gradio-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/langchain-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/langchain-dark.svg?v=1">
-      <img alt="langchain" width="48" height="48" src="assets/icons/langchain-dark.svg?v=1">
+      <img alt="langchain" title="LangChain" width="48" height="48" src="assets/icons/langchain-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/llamaindex-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/llamaindex-dark.svg?v=1">
-      <img alt="llamaindex" width="48" height="48" src="assets/icons/llamaindex-dark.svg?v=1">
+      <img alt="llamaindex" title="LlamaIndex" width="48" height="48" src="assets/icons/llamaindex-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/ollama-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/ollama-dark.svg?v=1">
-      <img alt="ollama" width="48" height="48" src="assets/icons/ollama-dark.svg?v=1">
+      <img alt="ollama" title="Ollama" width="48" height="48" src="assets/icons/ollama-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/vllm-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/vllm-dark.svg?v=1">
-      <img alt="vllm" width="48" height="48" src="assets/icons/vllm-dark.svg?v=1">
+      <img alt="vllm" title="vLLM" width="48" height="48" src="assets/icons/vllm-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/neo4j-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/neo4j-dark.svg?v=1">
-      <img alt="neo4j" width="48" height="48" src="assets/icons/neo4j-dark.svg?v=1">
+      <img alt="neo4j" title="Neo4j" width="48" height="48" src="assets/icons/neo4j-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/chromadb-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/chromadb-dark.svg?v=1">
-      <img alt="chromadb" width="48" height="48" src="assets/icons/chromadb-dark.svg?v=1">
+      <img alt="chromadb" title="ChromaDB" width="48" height="48" src="assets/icons/chromadb-dark.svg?v=1">
    </picture>
    <!-- <br> -->
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/pandas-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/pandas-dark.svg?v=1">
-      <img alt="pandas" width="48" height="48" src="assets/icons/pandas-dark.svg?v=1">
+      <img alt="pandas" title="pandas" width="48" height="48" src="assets/icons/pandas-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/numpy-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/numpy-dark.svg?v=1">
-      <img alt="numpy" width="48" height="48" src="assets/icons/numpy-dark.svg?v=1">
+      <img alt="numpy" title="NumPy" width="48" height="48" src="assets/icons/numpy-dark.svg?v=1">
    </picture>
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/matplotlib-light.svg?v=1">
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/matplotlib-dark.svg?v=1">
-      <img alt="matplotlib" width="48" height="48" src="assets/icons/matplotlib-dark.svg?v=1">
+      <img alt="matplotlib" title="Matplotlib" width="48" height="48" src="assets/icons/matplotlib-dark.svg?v=1">
    </picture>
 </div>
 
@@ -218,19 +218,19 @@ I'm an AI Engineer with experience in **building AI-powered SaaS products** and 
    <b>Other Tools</b>
    <br><br>
    <picture>
-      <img alt="docker" width="48" height="48" src="assets/icons/docker.svg" align="middle" />
+      <img alt="docker" title="Docker" width="48" height="48" src="assets/icons/docker.svg" align="middle" />
    </picture>
    &nbsp;
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/mlflow-light.svg?v=1" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/mlflow-dark.svg?v=1" />
-      <img alt="mlflow" height="40" src="assets/icons/mlflow-dark.svg?v=1" align="middle" />
+      <img alt="mlflow" title="MLflow" height="40" src="assets/icons/mlflow-dark.svg?v=1" align="middle" />
    </picture>
    &nbsp;
    <picture>
       <source media="(prefers-color-scheme: light)" srcset="assets/icons/figma-light.svg?v=1" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/icons/figma-dark.svg?v=1" />
-      <img alt="figma" height="40" src="assets/icons/mlflow-dark.svg?v=1" align="middle" />
+      <img alt="figma" title="Figma" height="40" src="assets/icons/figma-dark.svg?v=1" align="middle" />
    </picture>
 </div>
 
