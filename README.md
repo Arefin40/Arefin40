@@ -1,7 +1,6 @@
-<img 
-   src="assets/images/cover.svg"
-   alt="Cover photo"
-/>
+<picture>
+   <img src="assets/images/cover.svg" alt="Cover photo"/>
+</picture>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/arefin40/"><img src="assets/badges/linkedin.svg" alt="LinkedIn" height="24"></a>
